@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import EndingCards from './components/ending-cards'
@@ -8,7 +7,6 @@ import endings from './data/endings'
 import swal from 'sweetalert'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
-import src from '*.bmp';
 
 const randomEnding = (history) => {
   while (true) {
@@ -36,6 +34,16 @@ function App() {
   }
   useEffect(() => {
     setCard(randomEnding(history))
+  }, [])
+  useEffect(() => {
+    endings.forEach(({url}) => {
+      new Promise(function(resolve, reject) {
+        const img = new Image()
+        img.src = url
+        img.onload = resolve()
+        img.onerror = reject()
+      })
+    })
   }, [])
   const accept = () => {
     if (history.length >= endings.length - 1) {
