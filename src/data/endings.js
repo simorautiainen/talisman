@@ -33,15 +33,15 @@ const endings = [{
     Characters on the Crown of Command cannot encounter each other; they must roll 1 die for the Hand of Doom instead.`
   }, {
     name: 'Seven trials',
-    url: 'https://uc1d68121a4b0777bcb0241defbe.previews.dropboxusercontent.com/p/thumb/AA7tthMGo3EhoqOhKul1I3AeSssSboXfoGEjfdydUKzExkwRfwLZB_y7jqtlTg_wZHYZFdZl8c2rYgF9qxCp3xYRZccZhlRrPbnIhv2lD_TqmmeZjXYTataHAvrAk_13bn4QTnYCKpyxPuwW3cA1Cb_xknyN6BVyKwsGVsFurwq9WWLpF80-UlerFEhIZzz926gUBsYUvtiBmmRF87YjOR_desvXhjh13x5uRcugGNJ8GWy9tnU0Qwzx25FtUTM-7Yv6KOTOvBp4-tF3scvZsn8LG9Oa01C7VtQ-3-1NKqmLVFatrU0JY8e-5EMqFZpEaMKTnUuYG7wLM67ui5HQ7h9o8XZwASRMaVGxALMLaZrvJ9izURaqeJnALGo-uVhnt6ehgicbrQBDi6UqMK7R4jW4/p.jpeg?fv_content=true&size_mode=5',
+    url: 'https://uc1d68121a4b0777bcb0241defbe.previews.dropboxusercontent.com/p/thumb/AA7tthMGo3EhoqOhKul1I3AeSssSboXfoGEjfdydUKzExkwRfwLZB_y7jqtlTg_wZHYZFdZl8c2rYgF9qxCp3xYRZccZhlRrPbnIhv2lD_TqmmeZjXYTataHAvrAk_13bn4QTnYCKpyxPuwW3cA1Cb_xknyN6BVyKwsGVsFurwq9WWLpF80-UlerFEhIZzz926gUBsYUvtiBmmRF87YjOR_desvXhjh13x5uRcugGNJ8GWy9tnU0Qwzx25FtUTM-7Yv6KOTOvBp4-tF3scvZsn8LG9Oa01C7VtQ-3-1NKqmLVFatrU0JY8e-5EMqFZpEaMKTnUuYG7wLM67ui5HQ7h9o8XZwASRMaVGxALMLaZrvJ9izURaqeJnALGo-uVhnt6ehgicbrQBDi6UqMK7R4jW4/p.jpeg',
     rules: ''
   }, {
     name: 'Endless Darkness',
-    url: 'https://previews.dropbox.com/p/thumb/AA4t-jU_UatCJkyc-Zx16yJ9cNHRgj_uWeAaKfc5vwc8l3XJHQOafIZZCC_wKiOhD3oJseUO76MfuzO5cU_VTO8mskALxUOi1o4p42HJz2-tFjzATKokj1_SvqZjfYa1RKuwYsLU1dDSf6ns-1CNB1lM0YqNiDA1P1cH7WadbBZN7xaPcBfE4MQfBZTzDZxMHFxPMxjJw87xx4brEkzkVFB08xwdiGdS4Pskf7rJV-16XOHRLWQ3fO47nc9mqXNYperjiZ8YlMmE2lJZkfR4lP6x-kZ925xrS0K_apseskDDbCaItbgTFqq6HcSh7fpACOzf1e2xQXoRdUspDwnSZcL90kpaQ6fwtsHcoaEzfIS9QQ/p.jpeg?fv_content=true&size_mode=5',
+    url: 'https://previews.dropbox.com/p/thumb/AA4t-jU_UatCJkyc-Zx16yJ9cNHRgj_uWeAaKfc5vwc8l3XJHQOafIZZCC_wKiOhD3oJseUO76MfuzO5cU_VTO8mskALxUOi1o4p42HJz2-tFjzATKokj1_SvqZjfYa1RKuwYsLU1dDSf6ns-1CNB1lM0YqNiDA1P1cH7WadbBZN7xaPcBfE4MQfBZTzDZxMHFxPMxjJw87xx4brEkzkVFB08xwdiGdS4Pskf7rJV-16XOHRLWQ3fO47nc9mqXNYperjiZ8YlMmE2lJZkfR4lP6x-kZ925xrS0K_apseskDDbCaItbgTFqq6HcSh7fpACOzf1e2xQXoRdUspDwnSZcL90kpaQ6fwtsHcoaEzfIS9QQ/p.jpeg',
     rules: ''
   }, {
     name: 'Dragon King',
-    url: 'https://previews.dropbox.com/p/thumb/AA4hRVttAogz0k6khPkawCEy16QKt9AmGAULoyzW8eSek2S32GyE1Tw5xYdKr0xKSP1YU5s4p5GfbdwXGbR5mBuRFlFgHJJT_vzERklxMUA0AAoHVnW5MeIsBdDahWBOG6qQeeUuAU9VpZRP_ucVHJVp6lCBy4kypj0n6Ykg-P7EFg-8R57ZkEahVwPBajvsLrMb9Nmjkb5LtSKvhLLFDPcdugXeFhn8I47XkC1FzSfQl27_rvNlGCFQSIz9SKP2EKvU5idFO5fslZjk6GiIIXxJ8w12HTksMxRrCacqbP4XsIsuE4rXtY4zV-xFCruwxE4b_Lk5PYnIG_40UjOwejm8Du_w8Qf8n1YywMBBt5TxzQ/p.jpeg?fv_content=true&size_mode=5',
+    url: 'https://previews.dropbox.com/p/thumb/AA4hRVttAogz0k6khPkawCEy16QKt9AmGAULoyzW8eSek2S32GyE1Tw5xYdKr0xKSP1YU5s4p5GfbdwXGbR5mBuRFlFgHJJT_vzERklxMUA0AAoHVnW5MeIsBdDahWBOG6qQeeUuAU9VpZRP_ucVHJVp6lCBy4kypj0n6Ykg-P7EFg-8R57ZkEahVwPBajvsLrMb9Nmjkb5LtSKvhLLFDPcdugXeFhn8I47XkC1FzSfQl27_rvNlGCFQSIz9SKP2EKvU5idFO5fslZjk6GiIIXxJ8w12HTksMxRrCacqbP4XsIsuE4rXtY4zV-xFCruwxE4b_Lk5PYnIG_40UjOwejm8Du_w8Qf8n1YywMBBt5TxzQ/p.jpeg',
     rules: ''
   }, {
     name: 'Judgement Day',
@@ -53,11 +53,11 @@ const endings = [{
     6+) You have been judged worthy; you win the game!`
   }, {
     name: 'Wizards Curse',
-    url: 'https://previews.dropbox.com/p/thumb/AA4DfBtCEvcIvdH4H_u9lAO9LvFfZnenkjis0n_s4SuRJ-LUtJ4nAAyGpMJVFHkgEWJmn0YwoV-MbxOXBLyqZyyX9WFzhqedApNltgG8mHYXIzIxHss7KImQT65geJJUZwMGYqlfoN6QWy9xj_EJoK4r-JAKYjpzmH_iMfWNOI606paaOi5LZFweoqcAyJPE--PiGgZjZoUo_Kcfm8x2BiqKnq_HR_I4fH2F20RkK4SUm4AuPb3bUHAReZU9zpYU6R8jz2FF9EO55MGx8xo2Z5HAQcSJGqbgCnXQ05KW7rI-y7iFznCsf1cAqoUycrWYBLVmHWttHgSq2kpGTvH7aiepEFrtkPhOMZgWzXCE7nZspA/p.jpeg?fv_content=true&size_mode=5',
+    url: 'https://previews.dropbox.com/p/thumb/AA4DfBtCEvcIvdH4H_u9lAO9LvFfZnenkjis0n_s4SuRJ-LUtJ4nAAyGpMJVFHkgEWJmn0YwoV-MbxOXBLyqZyyX9WFzhqedApNltgG8mHYXIzIxHss7KImQT65geJJUZwMGYqlfoN6QWy9xj_EJoK4r-JAKYjpzmH_iMfWNOI606paaOi5LZFweoqcAyJPE--PiGgZjZoUo_Kcfm8x2BiqKnq_HR_I4fH2F20RkK4SUm4AuPb3bUHAReZU9zpYU6R8jz2FF9EO55MGx8xo2Z5HAQcSJGqbgCnXQ05KW7rI-y7iFznCsf1cAqoUycrWYBLVmHWttHgSq2kpGTvH7aiepEFrtkPhOMZgWzXCE7nZspA/p.jpeg',
     rules: ''
   }, {
     name: 'Demon Lord',
-    url: 'https://previews.dropbox.com/p/thumb/AA4yYe9Q7sLrf-vBH5TEyfSgnAW1gCgSeUgZAXEKMdmT_ip9MXpUOxNmJf2eK9PBcwiaDyJ5qEGH9DDL74PbMclCgdJ6jdysyFPxNZcTWLyD4a1pmkwerkZBM0cSNrWciAmLj-0DFN61J3EWfbUIQGQXZqkBisYISexwIUnlaOLTiFXtmv5miaRKjNDICEXTINfCsvJpTexQOwQqCouW5go7J-y-A2SKNWl-mXrrQQdSA5HvcubRLXTmgTZ6rTtnrhoso6yYVBuUlXBYMcuLNnB396M3wlYCgZ4aGY4CuEkRSWB70q9MrkPtiQ5QCzrugJ1dvfLSb-3rIR6VaYrIUP1ipT0tI1hVJJDKtSXdz0Rezw/p.jpeg?fv_content=true&size_mode=5',
+    url: 'https://previews.dropbox.com/p/thumb/AA4yYe9Q7sLrf-vBH5TEyfSgnAW1gCgSeUgZAXEKMdmT_ip9MXpUOxNmJf2eK9PBcwiaDyJ5qEGH9DDL74PbMclCgdJ6jdysyFPxNZcTWLyD4a1pmkwerkZBM0cSNrWciAmLj-0DFN61J3EWfbUIQGQXZqkBisYISexwIUnlaOLTiFXtmv5miaRKjNDICEXTINfCsvJpTexQOwQqCouW5go7J-y-A2SKNWl-mXrrQQdSA5HvcubRLXTmgTZ6rTtnrhoso6yYVBuUlXBYMcuLNnB396M3wlYCgZ4aGY4CuEkRSWB70q9MrkPtiQ5QCzrugJ1dvfLSb-3rIR6VaYrIUP1ipT0tI1hVJJDKtSXdz0Rezw/p.jpeg',
     rules: ''
   }, {
     name: 'Eagle King',
@@ -70,7 +70,7 @@ const endings = [{
     Life: 4`
   }, {
     name: 'Chosen By The Gods',
-    url: 'https://previews.dropbox.com/p/thumb/AA53FyKIfvZ8sGwN2m9FrTnqGKEJtvaXqiHYqz8XftIV6xR7sNKUtYuBpjdEeIe-KqISJw3-PmFYhzBq67CM1U8CCLZxbGg61iAyZdcI9znMc8h1CE7iTY13FFMK-Sy7xCslSQFD0yQNOhXFwNQ0vcWOMsDQjhT7sxdhIVXlC8G38j0c2qFUfj62xtLBrv_Fpan5KkX2VOE134HezT_IuC41L5j6yX3N2hWq3GzP-IY3fCAp39bHuZGjJ2BKN5UAIk-Fs_yrEbnP3PbzFNdpgKWMb2drI29gBEr6FLBxUmt6oPpfaL-PRYhqgBkQ-NFx063-ICJs3YxMqLjsB2qKr-spbZZs-41lO1kruzP3ufjIuA/p.jpeg?fv_content=true&size_mode=5',
+    url: 'https://previews.dropbox.com/p/thumb/AA53FyKIfvZ8sGwN2m9FrTnqGKEJtvaXqiHYqz8XftIV6xR7sNKUtYuBpjdEeIe-KqISJw3-PmFYhzBq67CM1U8CCLZxbGg61iAyZdcI9znMc8h1CE7iTY13FFMK-Sy7xCslSQFD0yQNOhXFwNQ0vcWOMsDQjhT7sxdhIVXlC8G38j0c2qFUfj62xtLBrv_Fpan5KkX2VOE134HezT_IuC41L5j6yX3N2hWq3GzP-IY3fCAp39bHuZGjJ2BKN5UAIk-Fs_yrEbnP3PbzFNdpgKWMb2drI29gBEr6FLBxUmt6oPpfaL-PRYhqgBkQ-NFx063-ICJs3YxMqLjsB2qKr-spbZZs-41lO1kruzP3ufjIuA/p.jpeg',
     rules: ''
   }
 
