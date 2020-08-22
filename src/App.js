@@ -37,16 +37,6 @@ function App() {
   useEffect(() => {
     setCard(randomEnding(history))
   }, [])
-  useEffect(() => {
-    endings.forEach(({url}) => {
-      new Promise(function(resolve, reject) {
-        const img = new Image()
-        img.src = url
-        img.onload = resolve()
-        img.onerror = reject()
-      })
-    })
-  }, [])
   const accept = () => {
     if (history.length >= endings.length - 1) {
       toast.warn('All cards have already been dealt, please reset', {
