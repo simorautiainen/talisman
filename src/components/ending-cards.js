@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+
 import endings from '../data/endings'
 import { Button, ButtonGroup, Container, Row, Col } from 'react-bootstrap'
 import { Shake } from 'reshake'
@@ -14,7 +15,13 @@ const buttonStyle = {
   border: 'solid 2px black',
   margin: '0.4rem'
 }
-const EndingCard = ({ card, randomCard, reset, isHistory, onRules, accept }) => {
+
+const imageStyle = {
+  maxHeight: '70vh',
+  width: '100%',
+  borderRadius: '1rem'
+}
+const EndingCard = ({ card, randomCard, reset, isHistory, onRules, accept, endingImage }) => {
   const [isShown, setIsShown] = useState(isHistory)
   const [isShaking, setIsShaking] = useState(false)
   const backSideUrl = 'https://www.talismanisland.com/tour_4re_character_back.jpg'
@@ -34,7 +41,7 @@ const EndingCard = ({ card, randomCard, reset, isHistory, onRules, accept }) => 
         <Col>
         { !isShaking
         ? <img style={{maxHeight: '70vh', width: '100%', borderRadius: '1rem' }} src={ isShown ? card.url : backSideUrl } className='img-fluid'/>
-        : <Shake
+        : <div><Shake
           h={14}
           v={5}
           r={3}
@@ -44,7 +51,8 @@ const EndingCard = ({ card, randomCard, reset, isHistory, onRules, accept }) => 
           fixed={true}
           fixedStop={false}
           freez={false}>
-          <img style={{maxHeight: '70vh', width: '100%', borderRadius: '1rem' }} src={ isShown ? card.url : backSideUrl } className='img-fluid'/></Shake>}</Col>
+          {isShown ? endingImage : <img style={imageStyle} src={ backSideUrl } className='img-fluid'/>}
+          </Shake></div>}</Col>
       </Row>
       { !isHistory &&
       <>
@@ -74,4 +82,4 @@ const EndingCard = ({ card, randomCard, reset, isHistory, onRules, accept }) => 
   )
 }
 
-export default EndingCard
+export {EndingCard, imageStyle}

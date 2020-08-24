@@ -1,26 +1,32 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import EndingCards from './components/ending-cards'
+import { EndingCard as EndingCards, imageStyle } from './components/ending-cards'
 import { Container, Row, Col } from 'react-bootstrap'
 import endings from './data/endings'
 import swal from 'sweetalert'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import {Image} from 'react-native'
 
-const randomEnding = (history) => {
+const randomEndingIndex = (history) => {
   while (true) {
     const randomIndex = Math.floor(Math.random() * endings.length)
     if ( !history.some(historyCard => historyCard.name === endings[randomIndex].name)) {
-      console.log('history', history, 'the endings last chosen', endings[randomIndex])
-      return endings[randomIndex]
+      return randomIndex
     }
   }
 }
+const loadImages = () => {
+  return endings.map(({url}, index) => <Image style={imageStyle} src={{uri: url, cache: 'only-if-cached'}} className='img-fluid'/>)
+}
 toast.configure()
 function App() {
-  const [card, setCard] = useState({})
+  const [cardIndex, setCardIndex] = useState()
   const [history, setHistory] = useState([])
+  const images = loadImages()
+  const card = endings[cardIndex]
+  const endingImage = images[cardIndex]
   const randomCard = () => {
     if (history.length >= endings.length - 1) {
       toast.warn('All cards have already been dealt, please reset', {
@@ -29,21 +35,11 @@ function App() {
       })
     }
     else {
-      setCard(randomEnding([...history, card]))
+      setCardIndex(randomEndingIndex([...history, card]))
     }
   }
   useEffect(() => {
-    setCard(randomEnding(history))
-  }, [])
-  useEffect(() => {
-    endings.forEach(({url}) => {
-      new Promise(function(resolve, reject) {
-        const img = new Image()
-        img.src = url
-        img.onload = resolve()
-        img.onerror = reject()
-      })
-    })
+    setCardIndex(randomEndingIndex(history))
   }, [])
   const accept = () => {
     if (history.length >= endings.length - 1) {
@@ -53,7 +49,7 @@ function App() {
       })
     } else {
     setHistory([...history, card])
-    setCard(randomEnding([...history, card]))
+    setCardIndex(randomEndingIndex([...history, card]))
   }
   }
   const getSwalOptions = card => {
@@ -74,7 +70,7 @@ function App() {
     swal(getSwalOptions(card))
   }
   const reset = () => {
-    setCard(randomEnding(history))
+    setCardIndex(randomEndingIndex(history))
     setHistory([])
   }
   return (
@@ -82,7 +78,7 @@ function App() {
       <Row style={{ padding: '1rem' }}>
         <Col md={3} />
         <Col xs={12} md={6}>
-          <EndingCards card={card} randomCard={randomCard} accept={accept} isHistory={false} onRules={(card) => onRules(card)} reset={reset} />
+          <EndingCards card={card} randomCard={randomCard} endingImage={endingImage} accept={accept} isHistory={false} onRules={(card) => onRules(card)} reset={reset} />
         </Col>
       </Row>
     <Row>
@@ -95,7 +91,7 @@ function App() {
     {history.map((historycard, index) => {
       return (
       <Col xs={6} key={index} md={3}>
-        <EndingCards card={historycard} isHistory={true} buttons={false} onRules={(card) => onRules(card)} />
+        <EndingCards card={historycard} endingImage={endingImage} isHistory={true} buttons={false} onRules={(card) => onRules(card)} />
       </Col>
       )
       })}
